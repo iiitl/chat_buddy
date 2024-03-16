@@ -39,6 +39,12 @@ dependencies:
   firebase_auth: ^4.12.1
   provider:
   cloud_firestore: ^4.13.5
+  flutter_native_splash: ^2.3.10
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash.png
+  android: true
+  ios: true
 dev_dependencies:
   flutter_test:
     sdk: flutter
