@@ -1,8 +1,8 @@
 
 
-import 'package:chat_buddy/pages/firebase_options.dart';
-import 'package:chat_buddy/pages/auth_gate.dart';
-import 'package:chat_buddy/pages/auth_service.dart';
+import 'package:chatify/pages/firebase_options.dart';
+import 'package:chatify/pages/auth_gate.dart';
+import 'package:chatify/pages/auth_service.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

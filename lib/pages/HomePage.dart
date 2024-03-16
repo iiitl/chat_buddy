@@ -1,5 +1,5 @@
-import 'package:chat_buddy/pages/ChatPage.dart';
-import 'package:chat_buddy/pages/auth_service.dart';
+import 'package:chatify/pages/ChatPage.dart';
+import 'package:chatify/pages/auth_service.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

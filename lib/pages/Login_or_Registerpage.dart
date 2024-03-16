@@ -1,6 +1,6 @@
 
-import 'package:chat_buddy/pages/LoginPage.dart';
-import 'package:chat_buddy/pages/RegisterPage.dart';
+import 'package:chatify/pages/LoginPage.dart';
+import 'package:chatify/pages/RegisterPage.dart';
 import 'package:flutter/material.dart';
 
 class LoginOrRegister extends StatefulWidget {
