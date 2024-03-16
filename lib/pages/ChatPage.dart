@@ -1,6 +1,6 @@
-import 'package:chat_buddy/components/ChatBubble.dart';
-import 'package:chat_buddy/components/Text_field.dart';
-import 'package:chat_buddy/pages/chat/chatService.dart';
+import 'package:Chat_chate/components/ChatBubble.dart';
+import 'package:Chat_chate/components/Text_field.dart';
+import 'package:Chat_chate/pages/chat/chatService.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

@@ -1,6 +1,6 @@
-import 'package:chat_buddy/components/My_button.dart';
-import 'package:chat_buddy/components/Text_field.dart';
-import 'package:chat_buddy/pages/auth_service.dart';
+import 'package:Chat_chate/components/My_button.dart';
+import 'package:Chat_chate/components/Text_field.dart';
+import 'package:Chat_chate/pages/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
