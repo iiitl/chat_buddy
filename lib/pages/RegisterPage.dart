@@ -1,4 +1,3 @@
-
 import 'package:chatify/pages/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -103,7 +102,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   const SizedBox(
                     height: 20,
                   ),
-                  MyButton(ontap: () => SignUp(context), text: "Sign Up"),
+                  MyButton(onTap: () => SignUp(context), text: "Sign Up"),
                   SizedBox(
                     height: 20,
                   ),
