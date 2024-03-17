@@ -62,21 +62,26 @@ class _HomePageState extends State<HomePage> {
     Map<String, dynamic> data = document.data()! as Map<String, dynamic>;
 //display all the users except the current
     if (_auth.currentUser!.email != data['email']) {
-      return ListTile(
-        title: Text(data['email'],style: TextStyle(
-          fontSize: 17,
-        ),),
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => chatpage(
-                receiverEmail: data['email'],
-                receiverId: data['uid'],
+      return Card(
+        elevation: 10,
+        color: Colors.grey,
+        margin: EdgeInsets.only(bottom: 10),
+        child: ListTile(
+          title: Text(data['email'],style: TextStyle(
+            fontSize: 17,
+          ),),
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => chatpage(
+                  receiverEmail: data['email'],
+                  receiverId: data['uid'],
+                ),
               ),
-            ),
-          );
-        },
+            );
+          },
+        ),
       );
     } else {
       return Container();

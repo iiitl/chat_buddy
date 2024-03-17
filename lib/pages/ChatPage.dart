@@ -125,18 +125,22 @@ class _chatpageState extends State<chatpage> {
             ),
 
           SizedBox(width: 5),
-          Container(
-            decoration: BoxDecoration(
-              color:Colors.green,
-              shape: BoxShape.circle,
-            ),
-            child: IconButton(
+          Card(
+            color: Colors.grey,
+            elevation: 10,
+            child: Container(
+              decoration: BoxDecoration(
+                color:Colors.grey,
+                shape: BoxShape.circle,
+              ),
+              child: IconButton(
 
-                onPressed: SendMessages,
-                icon: Icon(
-                  Icons.arrow_upward,
-                  size: 30,
-                )),
+                  onPressed: SendMessages,
+                  icon: Icon(
+                    Icons.arrow_upward,
+                    size: 30,
+                  )),
+            ),
           )
         ],
       ),

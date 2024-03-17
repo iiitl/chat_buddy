@@ -18,7 +18,7 @@ class ChatBubble extends StatelessWidget {
             bottomRight: Radius.circular(20),
 
           ),
-          color: Colors.green,
+          color: Colors.white,
 
       ),
       child: Container(
@@ -27,7 +27,7 @@ class ChatBubble extends StatelessWidget {
           message,
           style: TextStyle(
             fontSize: 12,
-            color: Colors.white,
+            color: Colors.black,
             fontFamily: 'Ostrich',
             letterSpacing: 1,
 
