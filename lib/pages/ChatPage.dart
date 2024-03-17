@@ -32,11 +32,12 @@ class _chatpageState extends State<chatpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[300],
+      backgroundColor: Colors.grey,
+
       appBar: AppBar(
-        title: Text(widget.receiverEmail),
+        title: Text(widget.receiverEmail,style: TextStyle(fontFamily: 'Ostrich',fontSize:20,letterSpacing: 2,fontWeight: FontWeight.bold,),),
         centerTitle: true,
-        backgroundColor: Colors.grey[800],
+        backgroundColor: Colors.black12,
       ),
       body: Column(
         children: [
@@ -86,8 +87,8 @@ class _chatpageState extends State<chatpage> {
         child: Column(
           crossAxisAlignment:
               (data['senderId'] == _firebaseAuth.currentUser!.uid)
-                  ? CrossAxisAlignment.end
-                  : CrossAxisAlignment.start,
+                  ? CrossAxisAlignment.start
+                  : CrossAxisAlignment.end,
           mainAxisAlignment:
               (data['senderId'] == _firebaseAuth.currentUser!.uid)
                   ? MainAxisAlignment.end
@@ -104,24 +105,39 @@ class _chatpageState extends State<chatpage> {
 
   //build message Input
   Widget _buildMessageInput() {
+
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 10,),
       child: Row(
         children: [
           Expanded(
-            child: MyTextField(
-              controller: _messageController,
-              hinttext: 'Enter message',
-              unknowntext: false,
-              // obscureText: false,
+            child: Container(
+              color: Colors.grey,
+
+
+                child: MyTextField(
+                  controller: _messageController,
+                  hinttext: 'Enter message',
+                  unknowntext: false,
+                  // obscureText: false,
+                ),
+              ),
             ),
-          ),
-          IconButton(
-              onPressed: SendMessages,
-              icon: Icon(
-                Icons.arrow_upward,
-                size: 30,
-              ))
+
+          SizedBox(width: 5),
+          Container(
+            decoration: BoxDecoration(
+              color:Colors.green,
+              shape: BoxShape.circle,
+            ),
+            child: IconButton(
+
+                onPressed: SendMessages,
+                icon: Icon(
+                  Icons.arrow_upward,
+                  size: 30,
+                )),
+          )
         ],
       ),
     );
